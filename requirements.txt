@@ -1,0 +1,17 @@
+# requirements.txt
+# Python 3.12.4
+# Training environment: NVIDIA GeForce RTX 4060 (8 GB VRAM), CUDA 12.4, cuDNN 9.3
+
+torch==2.4.1+cu124
+torchvision==0.19.1+cu124
+scikit-learn==1.5.1
+numpy==1.26.4
+pandas==2.2.2
+Pillow==10.4.0
+tqdm==4.66.5
+
+# Note: torch and torchvision were installed with CUDA 12.4 support
+# (+cu124 build). For CPU-only installation, use the standard PyPI builds
+# instead (e.g., torch==2.4.1, torchvision==0.19.1), noting that GPU-dependent
+# results (e.g., inference latency, VRAM usage) may not be reproducible
+# without equivalent CUDA-enabled hardware.

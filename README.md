@@ -9,20 +9,6 @@ architectures (AlexNet, SqueezeNet 1.0, MobileNetV2, and EfficientNet-B0) for
 image-based classification of total suspended solids (TSS) in water, using a
 sample-level, leakage-aware evaluation design.
 
-Repository structure
-CNNCOMPSSWQ/
-├── codes/
-│   ├── grid_search_groupkfold.ipynb     # Hyperparameter (learning rate) search
-│   │                                     # using GroupKFold cross-validation (k=3)
-│   └── final_training_evaluation.ipynb  # Final model training on the 25-sample
-│                                         # development pool and evaluation on the
-│                                         # independent 4-sample holdout set
-├── datasets/
-│   └── ...                              # TSS image dataset (6,515 images,
-│                                         # 30 physical water samples)
-├── requirements.txt
-└── README.md
-Dataset
 
 The dataset comprises 6,515 smartphone-acquired images extracted from videos of
 30 physical water samples (4 Low, 10 Medium, 16 High TSS concentration classes;
